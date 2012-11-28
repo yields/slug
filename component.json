@@ -1,0 +1,13 @@
+{
+  "name": "slug",
+  "repo": "yields/slug",
+  "description": "slug generator",
+  "version": "0.0.1",
+  "keywords": ["slug"],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
