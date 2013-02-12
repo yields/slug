@@ -1,7 +1,7 @@
 {
   "name": "slug-component",
   "description": "slug generator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Amir Abu Shareb <yields@icloud.com>",
   "license": "MIT"
 }

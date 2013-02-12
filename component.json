@@ -2,7 +2,7 @@
   "name": "slug",
   "repo": "yields/slug",
   "description": "slug generator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": ["slug"],
   "dependencies": {},
   "development": {},
