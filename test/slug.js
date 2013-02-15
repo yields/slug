@@ -24,8 +24,12 @@ describe('slug()', function () {
     assert(gen('@!#!@#!@#foo bar1232') == 'foo-bar1232');
   })
 
-  it('should respect `replacement` parameter', function () {
-    assert(gen('foo bar', '_') == 'foo_bar');
+  it('should respect `separator` option', function () {
+    assert(gen('foo bar', { separator: '_' }) == 'foo_bar');
+  })
+
+  it('should respect `replace` option', function () {
+    assert(gen('foo bar', { replace : /o/g }) == 'f-bar');
   })
 
   it('should trim', function () {
