@@ -9,13 +9,15 @@
 
 ## API
 
-#### slug(str[, replacement])
+#### slug(str[, opts])
 
 ```javascript
 slug('foo bar');
 // > foo-bar
-slug('foo bar', '_');
+slug('foo bar', { separator: '_' });
 // > foo_bar
+slug('foo bar', { replace: /o/g });
+// > f-bar
 ```
 
 ## Tests
