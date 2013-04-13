@@ -7,17 +7,20 @@
  *        generate('foo bar');
  *        // > foo-bar
  *
+ * options:
+ *
+ *    - `.replace` characters to replace, defaulted to `/[^a-z0-9]/g`
+ *    - `.separator` separator to insert, defaulted to `-`
+ *
  * @param {String} str
- * @param {Object} options
- * @config {String|RegExp} [replace] characters to replace, defaulted to `/[^a-z0-9]/g`
- * @config {String} [separator] separator to insert, defaulted to `-`
+ * @param {Object} opts
  * @return {String}
  */
 
-module.exports = function (str, options) {
-  options || (options = {});
+module.exports = function(str, opts){
+  opts = opts || {};
   return str.toLowerCase()
-    .replace(options.replace || /[^a-z0-9]/g, ' ')
+    .replace(opts.replace || /[^a-z0-9]/g, ' ')
     .replace(/^ +| +$/g, '')
-    .replace(/ +/g, options.separator || '-')
+    .replace(/ +/g, opts.separator || '-')
 };
